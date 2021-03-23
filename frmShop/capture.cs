@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace Shop
+namespace frmShop
 {
     class capture
     {

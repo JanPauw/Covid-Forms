@@ -1,4 +1,4 @@
-﻿namespace Shop
+﻿namespace frmShop
 {
      class items
     {

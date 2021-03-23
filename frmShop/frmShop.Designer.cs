@@ -30,7 +30,7 @@ namespace frmShop
         private void InitializeComponent()
         {
             this.lblMainTitle = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.pnlAddShop = new System.Windows.Forms.Panel();
             this.btnAddShop = new System.Windows.Forms.Button();
             this.lblAddProducts = new System.Windows.Forms.Label();
             this.lblAddShopCell = new System.Windows.Forms.Label();
@@ -39,22 +39,22 @@ namespace frmShop
             this.edtShopCell = new System.Windows.Forms.TextBox();
             this.edtShopName = new System.Windows.Forms.TextBox();
             this.lblAddNewShop = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.pnlShops = new System.Windows.Forms.Panel();
             this.btnRefresh = new System.Windows.Forms.Button();
             this.lblShopsNameOutput = new System.Windows.Forms.Label();
             this.lblShopNames = new System.Windows.Forms.Label();
             this.lbxShopNames = new System.Windows.Forms.ListBox();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.pnlAddItems = new System.Windows.Forms.Panel();
             this.btnAddItems = new System.Windows.Forms.Button();
             this.lblProductPrice = new System.Windows.Forms.Label();
             this.lblProductName = new System.Windows.Forms.Label();
             this.edtProductPrice = new System.Windows.Forms.TextBox();
             this.edtProductName = new System.Windows.Forms.TextBox();
             this.lblAddNewItem = new System.Windows.Forms.Label();
-            this.panel1.SuspendLayout();
+            this.pnlAddShop.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numProductsQuntity)).BeginInit();
-            this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
+            this.pnlShops.SuspendLayout();
+            this.pnlAddItems.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblMainTitle
@@ -66,20 +66,20 @@ namespace frmShop
             this.lblMainTitle.TabIndex = 0;
             this.lblMainTitle.Text = "Welcome to the Shop generator";
             // 
-            // panel1
+            // pnlAddShop
             // 
-            this.panel1.Controls.Add(this.btnAddShop);
-            this.panel1.Controls.Add(this.lblAddProducts);
-            this.panel1.Controls.Add(this.lblAddShopCell);
-            this.panel1.Controls.Add(this.lblAddShopName);
-            this.panel1.Controls.Add(this.numProductsQuntity);
-            this.panel1.Controls.Add(this.edtShopCell);
-            this.panel1.Controls.Add(this.edtShopName);
-            this.panel1.Controls.Add(this.lblAddNewShop);
-            this.panel1.Location = new System.Drawing.Point(12, 27);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(294, 196);
-            this.panel1.TabIndex = 1;
+            this.pnlAddShop.Controls.Add(this.btnAddShop);
+            this.pnlAddShop.Controls.Add(this.lblAddProducts);
+            this.pnlAddShop.Controls.Add(this.lblAddShopCell);
+            this.pnlAddShop.Controls.Add(this.lblAddShopName);
+            this.pnlAddShop.Controls.Add(this.numProductsQuntity);
+            this.pnlAddShop.Controls.Add(this.edtShopCell);
+            this.pnlAddShop.Controls.Add(this.edtShopName);
+            this.pnlAddShop.Controls.Add(this.lblAddNewShop);
+            this.pnlAddShop.Location = new System.Drawing.Point(12, 27);
+            this.pnlAddShop.Name = "pnlAddShop";
+            this.pnlAddShop.Size = new System.Drawing.Size(294, 196);
+            this.pnlAddShop.TabIndex = 1;
             // 
             // btnAddShop
             // 
@@ -89,6 +89,7 @@ namespace frmShop
             this.btnAddShop.TabIndex = 7;
             this.btnAddShop.Text = "Add Shop";
             this.btnAddShop.UseVisualStyleBackColor = true;
+            this.btnAddShop.Click += new System.EventHandler(this.btnAddShop_Click);
             // 
             // lblAddProducts
             // 
@@ -147,16 +148,16 @@ namespace frmShop
             this.lblAddNewShop.TabIndex = 0;
             this.lblAddNewShop.Text = "Add New Shop";
             // 
-            // panel2
+            // pnlShops
             // 
-            this.panel2.Controls.Add(this.btnRefresh);
-            this.panel2.Controls.Add(this.lblShopsNameOutput);
-            this.panel2.Controls.Add(this.lblShopNames);
-            this.panel2.Controls.Add(this.lbxShopNames);
-            this.panel2.Location = new System.Drawing.Point(312, 27);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(294, 398);
-            this.panel2.TabIndex = 2;
+            this.pnlShops.Controls.Add(this.btnRefresh);
+            this.pnlShops.Controls.Add(this.lblShopsNameOutput);
+            this.pnlShops.Controls.Add(this.lblShopNames);
+            this.pnlShops.Controls.Add(this.lbxShopNames);
+            this.pnlShops.Location = new System.Drawing.Point(312, 27);
+            this.pnlShops.Name = "pnlShops";
+            this.pnlShops.Size = new System.Drawing.Size(294, 398);
+            this.pnlShops.TabIndex = 2;
             // 
             // btnRefresh
             // 
@@ -194,18 +195,18 @@ namespace frmShop
             this.lbxShopNames.Size = new System.Drawing.Size(272, 304);
             this.lbxShopNames.TabIndex = 0;
             // 
-            // panel3
+            // pnlAddItems
             // 
-            this.panel3.Controls.Add(this.btnAddItems);
-            this.panel3.Controls.Add(this.lblProductPrice);
-            this.panel3.Controls.Add(this.lblProductName);
-            this.panel3.Controls.Add(this.edtProductPrice);
-            this.panel3.Controls.Add(this.edtProductName);
-            this.panel3.Controls.Add(this.lblAddNewItem);
-            this.panel3.Location = new System.Drawing.Point(12, 229);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(294, 196);
-            this.panel3.TabIndex = 8;
+            this.pnlAddItems.Controls.Add(this.btnAddItems);
+            this.pnlAddItems.Controls.Add(this.lblProductPrice);
+            this.pnlAddItems.Controls.Add(this.lblProductName);
+            this.pnlAddItems.Controls.Add(this.edtProductPrice);
+            this.pnlAddItems.Controls.Add(this.edtProductName);
+            this.pnlAddItems.Controls.Add(this.lblAddNewItem);
+            this.pnlAddItems.Location = new System.Drawing.Point(12, 229);
+            this.pnlAddItems.Name = "pnlAddItems";
+            this.pnlAddItems.Size = new System.Drawing.Size(294, 196);
+            this.pnlAddItems.TabIndex = 8;
             // 
             // btnAddItems
             // 
@@ -263,19 +264,19 @@ namespace frmShop
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(621, 436);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pnlAddItems);
+            this.Controls.Add(this.pnlShops);
+            this.Controls.Add(this.pnlAddShop);
             this.Controls.Add(this.lblMainTitle);
             this.Name = "frmShop";
             this.Text = "Shop Generator";
-            this.panel1.ResumeLayout(false);
-            this.panel1.PerformLayout();
+            this.pnlAddShop.ResumeLayout(false);
+            this.pnlAddShop.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.numProductsQuntity)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
+            this.pnlShops.ResumeLayout(false);
+            this.pnlShops.PerformLayout();
+            this.pnlAddItems.ResumeLayout(false);
+            this.pnlAddItems.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -284,7 +285,7 @@ namespace frmShop
         #endregion
 
         private System.Windows.Forms.Label lblMainTitle;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel pnlAddShop;
         private System.Windows.Forms.Button btnAddShop;
         private System.Windows.Forms.Label lblAddProducts;
         private System.Windows.Forms.Label lblAddShopCell;
@@ -293,8 +294,8 @@ namespace frmShop
         private System.Windows.Forms.TextBox edtShopCell;
         private System.Windows.Forms.TextBox edtShopName;
         private System.Windows.Forms.Label lblAddNewShop;
-        private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel pnlShops;
+        private System.Windows.Forms.Panel pnlAddItems;
         private System.Windows.Forms.Label lblProductPrice;
         private System.Windows.Forms.Label lblProductName;
         private System.Windows.Forms.TextBox edtProductPrice;
