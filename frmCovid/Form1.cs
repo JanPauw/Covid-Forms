@@ -17,5 +17,9 @@ namespace frmCovid
             InitializeComponent();
         }
 
+        private void btnJanClicked_Click(object sender, EventArgs e)
+        {
+            lblOutput.Text = edtInput.Text;
+        }
     }
 }
